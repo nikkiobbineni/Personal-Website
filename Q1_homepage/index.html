@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Its Me</title>
+
+    <head>
+        <link rel="stylesheet" href="css/1.css">
+        <style type="text/css">
+            .rrr {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+                width: 100%;
+
+            }
+
+            .svp {
+                background: rgb(34, 193, 195);
+                background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(245, 186, 239, 1) 100%);
+                background-position: center;
+                backface-visibility: inherit;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 150vh;
+                width: 100%;
+            }
+
+            table,
+            th,
+            td {
+                padding: 10px;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+</head>
+
+
+<body class="rrr"
+    style="background-image: url('http://4.bp.blogspot.com/-Uk_KFP52APE/URd2jbxosPI/AAAAAAAAKwo/dPSSk-YE4MQ/s1600/plain+blue+cool+hd+images.jpg');background-repeat:no-repeat;width: 100%;background-size: 100%;">
+
+    <marquee width="100%" direction="right" height="100px" scrollamount="25px">
+        <p style="font-size:30px">Here you go..Know me more..</p>
+    </marquee>
+    <center>
+        <h1>All about ME...</h1>
+        <br />
+        <br />
+        <table style="width:75%">
+            <tr>
+                <th>Who am I??</th>
+                <td colspan="2"> This is Sai Nikhita Obbineni, Super happy, Always Smiling. &nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <th>A Glance of Me</th>
+                <td colspan="2"><img
+                        src="https://imgix.bustle.com/rehost/2016/9/13/2461d75d-8d1a-465b-8804-c668460b881c.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress"
+                        width="150" height="150" /></td>
+            </tr>
+            <tr>
+                <th rowspan="2">How about studies??</th>
+                <td>
+                    Narayana Group of Institutions &nbsp;&nbsp;</td>
+                <td> [2015-2021]<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    IIITH CSE </td>
+                <td>[2021-2025]
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2">What were my achievements??</th>
+                <td>
+                    10th class 10CGPA &nbsp;&nbsp;</td>
+                <td> [2019]<br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Cracked RMO twice </td>
+                <td>[2019,2020]
+                </td>
+            </tr>
+
+            <tr>
+                <th>Skills</th>
+                <td colspan="2">Dancing,Singing.</td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <p style="font-size:30px">Change Background Colour..</p>
+        <button id="bg1">Red</button>
+        <button id="bg2">Purple</button>
+        <button id="bg3">Green</button>
+        <button id="bg4">Brown</button>
+        <button id="bg5">Wheat</button>
+        <script src="js/1.js"></script>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="svp">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div id="text">
+                <p>Change Font Size..</p>
+                <button id="f1">Minimum</button>
+                <button id="f2">Medium</button>
+                <button id="f3">Maximum</button>
+                <script src="js/2.js">
+                </script>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p style="font-size:30px">Redirecting..</p>
+            <a href="https://www.instagram.com/">
+                <img src="http://cdn.osxdaily.com/wp-content/uploads/2017/02/instagram-icon.jpg" width=150"
+                    height="150">
+            </a>
+            <a href="css/1.css">
+                <img src="https://scholarlykitchen.sspnet.org/wp-content/uploads/2018/07/iStock-506432952.jpg"
+                    width=150" height="150">
+            </a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p style="font-size:30px"> News and Updates</p>
+            <form onsubmit="event.preventDefault();onFormSubmit();">
+                <textarea id="name" cols="15" rows="15"
+                    style=" background-color:rgb(217, 174, 228);color:rgb(11, 15, 19);"
+                    placeholder="Update or Enter news"></textarea>
+                <br />
+                <input type="button" value="Submit" onclick='MD()'>
+            </form>
+            <div id="msg"></div>
+            <table style="width: 70%;">
+                <tr>
+                    <td>Serial No:</td>
+                    <td>News and Updates</td>
+                    <td>Delete/Edit</td>
+                </tr>
+                <tbody id="root">
+                    <script>
+                        SD(); id = "hi";
+                        function SD() {
+                            arr = gcd();
+                            if (arr != null) {
+                                html = '';
+                                e = 1;
+                                for (let l in arr) {
+                                    html = html + `<tr><td>${e}</td>
+			<td>${arr[l]}</td><td><a href="javascript:void(0)" onclick="ED(${l})">Edit</a>
+			&nbsp;<a href="javascript:void(0)" onclick="DD(${l})">Delete</a></td></tr>`;
+                                    e = e + 1;
+                                }
+                                document.getElementById('root').innerHTML = html;
+
+                            }
+                        }
+                        function gcd() {
+                            arr = JSON.parse(localStorage.getItem('crud'));
+                            return arr;
+                        }
+                        function MD() {
+                            document.getElementById('msg').innerHTML = "";
+                            let name = document.getElementById('name').value;
+
+                            console.log(id);
+                            if (id != 'hi') {
+                                arr = gcd();
+                                arr[id] = name;
+                                scd(arr);
+                            } else {
+                                arr = gcd();
+                                if (arr == null) {
+                                    data = [name];
+                                    scd(data);
+                                } else {
+                                    arr.push(name);
+                                    scd(arr);
+                                }
+                            }
+                            document.getElementById('name').value = '';
+                            SD();
+
+                        }
+                        function scd(p) {
+                            localStorage.setItem('crud', JSON.stringify(p));
+                        }
+                        function DD(r) {
+                            arr = gcd();
+                            arr.splice(r, 1);
+                            scd(arr);
+                            SD();
+                        }
+                        function ED(r) {
+                            id = r;
+                            arr = gcd();
+                            document.getElementById('name').value = arr[r];
+                        }
+                    </script>
+            </table>
+    </center>
+</body>
+
+</html>
